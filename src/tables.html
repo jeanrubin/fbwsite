@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Tableau de bord</title>
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="../js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Family Business</a>
+                <button class="btn btn-link btn-lg order-1 order-lg-0" id="sidebarToggle" href="#"><span class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark bg-primary" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav"> 
+                            <a class="nav-link" href="tableaudebord.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Tableau
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">Administration</div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Configuration
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseAdmin" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="404.html">Entrepots</a>
+                                    <a class="nav-link" href="404.html">Points de vente</a>
+                                    <a class="nav-link" href="404.html">Infos impression</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProd" aria-expanded="false" aria-controls="collapseProd">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Produits
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProd" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="404.html">Catégories</a>
+                                    <a class="nav-link" href="tables.html">Articles</a>                                    
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRH" aria-expanded="false" aria-controls="collapseRH">
+                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
+                                Ressources humaines
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRH" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="404.html">Groupes</a>
+                                    <a class="nav-link" href="enregistrer.html">Utilisateurs</a>                                    
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">Controle</div>
+                            <a class="nav-link" href="rapport.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Rapports
+                            </a>                          
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer bg-primary">
+                        <div class="small">Logged in as:</div>
+                        Family Business
+                    </div>
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <div class="container-fluid">
+                            <h1 class="mt-4">Charts</h1>
+                            <ol class="breadcrumb mb-4">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Charts</li>
+                            </ol>
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official
+                                    <a target="_blank" href="https://www.chartjs.org/docs/latest/">Chart.js documentation</a>
+                                    .
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-area mr-1"></i>
+                                    Area Chart Example
+                                </div>
+                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="30"></canvas></div>
+                                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <i class="fas fa-chart-bar mr-1"></i>
+                                            Bar Chart Example
+                                        </div>
+                                        <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
+                                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <i class="fas fa-chart-pie mr-1"></i>
+                                            Pie Chart Example
+                                        </div>
+                                        <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
+                                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Family Business 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="../jquery/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="../js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/ajax-utils.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="../js/chart-area-demo.js"></script>
+        <script src="../js/chart-bar-demo.js"></script>
+        <script src="../js/dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../js/datatables-demo.js"></script>
+        <script src="../js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../js/chart-pie-demo.js" crossorigin="anonymous"></script>
+    </body>
+</html>

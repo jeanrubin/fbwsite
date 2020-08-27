@@ -1,0 +1,134 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+	background-color: yellow;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url('../images/family_logo.png') no-repeat;
+	width: 150px;
+	height: 106px;
+	margin: 10px 15px 10px 0;
+}
+
+h1{
+	text-align: center;
+}
+
+#nav-list{
+	margin-top: 10px
+}
+
+#nav-list a{
+	color: #951c49;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background: #e7e7e7;
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+#phone{
+	margin-top: 5px;
+}
+
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div{
+	text-align: right;
+	padding-right: 15px;
+	color: #557c3e;
+}
+
+.jumbotron{
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #cF0C1F;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+	background: url('../images/tampicoT.jpeg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile{
+	background: url('../images/fblogo.png') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1.6em;
+text-transform: uppercase;
+background-color: #000;
+color: #fff;
+opacity: .8;
+}
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+
+#hours, #adress{
+	line-height: 2;
+}
+
+#hours > span, #adress > span{
+	font-size: 1.3em;
+}
+
+#adress p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+
+#testiminials{
+	font-style: italic;
+}
+
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
